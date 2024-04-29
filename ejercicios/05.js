@@ -2,6 +2,9 @@
 
 function calcularOperacion(numero1, numero2, operacion) {
     let resultado;
+    let numero1 = parseFloat(prompt("Para realizar una operacion, ingrese el primer número:"));
+    let numero2 = parseFloat(prompt("Ingrese el segundo número:"));
+    let operacion = prompt("Ingrese la operación que desea realizar (+, -, *, /):");
 
     switch (operacion) {
       case '+':
@@ -25,10 +28,7 @@ function calcularOperacion(numero1, numero2, operacion) {
     }
     return resultado;
   }
-  
-  let numero1 = parseFloat(prompt("Para realizar una operacion, ingrese el primer número:"));
-  let numero2 = parseFloat(prompt("Ingrese el segundo número:"));
-  let operacion = prompt("Ingrese la operación que desea realizar (+, -, *, /):");
+
   
   if (isNaN(numero1) || isNaN(numero2)) {
     console.log("Por favor, ingrese números válidos.");
